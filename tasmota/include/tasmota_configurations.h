@@ -823,7 +823,7 @@
 #undef USE_HRE                                   // Disable support for Badger HR-E Water Meter (+1k4 code)
 #undef USE_A4988_STEPPER                         // Disable support for A4988_Stepper
 #undef USE_PROMETHEUS                            // Disable support for https://prometheus.io/ metrics exporting over HTTP /metrics endpoint
-#undef USE_NEOPOOL                               // Disable support for Sugar Valley NeoPool Controller - also known under brands Hidrolife, Aquascenic, Oxilife, Bionet, Hidroniser, UVScenic, Station, Brilix, Bayrol and Hay (+6k flash, +60 mem)
+#undef USE_NEOPOOL                               // Disable support for Sugar Valley NeoPool Controller - also known under brands Hidrolife, Aquascenic, Oxilife, Bionet, Hidroniser, UVScenic, Station, Brilix, Bayrol and Hay (+14k flash, +120 mem)
 #undef USE_THERMOSTAT                            // Disable support for Thermostat
 #undef DEBUG_THEO                                // Disable debug code
 #undef USE_DEBUG_DRIVER                          // Disable debug code
@@ -1047,6 +1047,17 @@
     #define USE_UFILESYS
       #define GUI_TRASH_FILE
       #define GUI_EDIT_FILE
+    #ifdef ESP8266_4M
+      #ifndef USE_FTP
+        #define USE_FTP
+      #endif
+      #ifndef USER_FTP
+        #define USER_FTP "user"
+      #endif
+      #ifndef PW_FTP
+        #define PW_FTP "pass"
+      #endif
+    #endif // ESP8266_4M
     #define USE_SPI
     #define USE_SDCARD
     #define USE_PING

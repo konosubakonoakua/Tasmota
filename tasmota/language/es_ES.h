@@ -57,6 +57,7 @@
 #define D_AP "AP"                    // Access Point
 #define D_AS "como"
 #define D_AUTO "AUTO"
+#define D_BATTERY "Battery"
 #define D_BATT "Bat"                // Short for Battery
 #define D_BATTERY_CHARGE "Charge"   // Battery charge in %
 #define D_BLINK "Blink"
@@ -166,7 +167,6 @@
 #define D_RESTART "Reiniciar"
 #define D_RESTARTING "Reiniciando"
 #define D_RESTART_REASON "Causa Reinicio"
-#define D_RESTORE "Restauración"
 #define D_RETAINED "Grabado"
 #define D_RULE "Regla"
 #define D_SAVE "Grabar"
@@ -192,7 +192,6 @@
 #define D_TWILIGHT_ASTRONOMICAL "Astronomical"
 #define D_TWILIGHT_CIVIL "Civil"
 #define D_TWILIGHT_NAUTICAL "Nautical"
-#define D_UPGRADE "Actualización"
 #define D_UPLOAD "Carga"
 #define D_UPTIME "Tiempo Encendido"
 #define D_USED "used"
@@ -277,6 +276,7 @@
 #define D_INFORMATION "Información"
 #define D_FIRMWARE_UPGRADE "Actualizar Firmware"
 #define D_MANAGEMENT "Consolas"
+#define D_GPIO_VIEWER "GPIO Viewer"
 #define D_CONSOLE "Consola"
 #define D_CONFIRM_RESTART "Confirmar Reinicio"
 
@@ -290,6 +290,7 @@
 #define D_RESET_CONFIGURATION "Reset de Configuración"
 #define D_BACKUP_CONFIGURATION "Backup de Configuración"
 #define D_RESTORE_CONFIGURATION "Restaurar Configuración"
+#define D_START_RESTORE "Start restore"
 #define D_MAIN_MENU "Menú Principal"
 
 #define D_MODULE_PARAMETERS "Parámetros del módulo"
@@ -546,6 +547,22 @@
 #define D_DEVICE "Dispositivo"
 #define D_DEVICE_INPUT "Entrada"
 #define D_DEVICE_OUTPUT "Salida"
+
+// xdrv_39_thermostat.ino, xdrv_85_esp32_ble_eq3_trv.ino
+#define D_THERMOSTAT                  "Thermostat"
+#define D_THERMOSTAT_SET_POINT        "Set Point Temperature"
+#define D_THERMOSTAT_SENSOR           "Current Temperature"
+#define D_THERMOSTAT_GRADIENT         "Gradient Temperature"
+#define D_THERMOSTAT_DUTY_CYCLE       "Duty cycle"
+#define D_THERMOSTAT_CYCLE_TIME       "Cycle time"
+#define D_THERMOSTAT_PI_AUTOTUNE      "PI Auto tuning"
+#define D_THERMOSTAT_CONTROL_METHOD   "Control method"
+#define D_THERMOSTAT_RAMP_UP          "Ramp up"
+#define D_THERMOSTAT_PI               "PI"
+#define D_THERMOSTAT_AUTOTUNE         "Autotune"
+#define D_THERMOSTAT_RAMP_UP_HYBRID   "Ramp up (Hybrid)"
+#define D_THERMOSTAT_PI_HYBRID        "PI (Hybrid)"
+#define D_THERMOSTAT_AUTOTUNE_HYBRID  "Autotune (Hybrid)"
 
 // xsns_05_ds18b20.ino
 #define D_SENSOR_BUSY "Sensor ocupado"
@@ -942,6 +959,7 @@
 #define D_SENSOR_BIOPDU_PZEM016_RX "BioPDU PZEM016 Rx"
 #define D_SENSOR_BIOPDU_BIT    "BioPDU Bit"
 #define D_SENSOR_LOX_O2_RX     "LoxO2 RX"
+#define D_GPIO_MAGIC_SWITCH "MagicSwitch"
 
 // Units
 #define D_UNIT_AMPERE "A"
@@ -1205,5 +1223,9 @@
 // xsns_106_gdk101.ino
 #define D_AVG_RAD_DOSE                    "dosis media de radiación"
 #define D_UNIT_US_H                       "µSv/h"
+
+// ixrv92_pipsolar.ino
+#define D_SENSOR_PIPSOLAR_TX             "Pipsolar TX"
+#define D_SENSOR_PIPSOLAR_RX             "Pipsolar RX"
 
 #endif  // _LANGUAGE_ES_ES_H_

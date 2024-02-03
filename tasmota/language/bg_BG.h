@@ -57,6 +57,7 @@
 #define D_AP "Точка за достъп"       // Access Point
 #define D_AS "като"
 #define D_AUTO "АВТОМАТИЧНО"
+#define D_BATTERY "Battery"
 #define D_BATT "Бат."                // Short for Battery
 #define D_BATTERY_CHARGE "Charge"   // Battery charge in %
 #define D_BLINK "Мигане вкл."
@@ -166,7 +167,6 @@
 #define D_RESTART "Рестартиране"
 #define D_RESTARTING "Рестартиране"
 #define D_RESTART_REASON "Причина за рестарт"
-#define D_RESTORE "възстановяване"
 #define D_RETAINED "запазено"
 #define D_RULE "Правило"
 #define D_SAVE "Запазване"
@@ -192,7 +192,6 @@
 #define D_TWILIGHT_ASTRONOMICAL "Astronomical"
 #define D_TWILIGHT_CIVIL "Civil"
 #define D_TWILIGHT_NAUTICAL "Nautical"
-#define D_UPGRADE "Обновяване"
 #define D_UPLOAD "Качването е"
 #define D_UPTIME "Време на работа"
 #define D_USED "използвано"
@@ -277,6 +276,7 @@
 #define D_INFORMATION "Информация"
 #define D_FIRMWARE_UPGRADE "Обновяване на софтуера"
 #define D_MANAGEMENT "Терминали"
+#define D_GPIO_VIEWER "GPIO Viewer"
 #define D_CONSOLE "Терминал"
 #define D_CONFIRM_RESTART "Потвърдете рестартиране"
 
@@ -290,6 +290,7 @@
 #define D_RESET_CONFIGURATION "Нулиране на настройки"
 #define D_BACKUP_CONFIGURATION "Резервно копие на настройки"
 #define D_RESTORE_CONFIGURATION "Възстановяване на настройки"
+#define D_START_RESTORE "Start restore"
 #define D_MAIN_MENU "Начало"
 
 #define D_MODULE_PARAMETERS "Параметри на модула"
@@ -546,6 +547,22 @@
 #define D_DEVICE "Устройство"
 #define D_DEVICE_INPUT "Вход"
 #define D_DEVICE_OUTPUT "Изход"
+
+// xdrv_39_thermostat.ino, xdrv_85_esp32_ble_eq3_trv.ino
+#define D_THERMOSTAT                  "Thermostat"
+#define D_THERMOSTAT_SET_POINT        "Set Point Temperature"
+#define D_THERMOSTAT_SENSOR           "Current Temperature"
+#define D_THERMOSTAT_GRADIENT         "Gradient Temperature"
+#define D_THERMOSTAT_DUTY_CYCLE       "Duty cycle"
+#define D_THERMOSTAT_CYCLE_TIME       "Cycle time"
+#define D_THERMOSTAT_PI_AUTOTUNE      "PI Auto tuning"
+#define D_THERMOSTAT_CONTROL_METHOD   "Control method"
+#define D_THERMOSTAT_RAMP_UP          "Ramp up"
+#define D_THERMOSTAT_PI               "PI"
+#define D_THERMOSTAT_AUTOTUNE         "Autotune"
+#define D_THERMOSTAT_RAMP_UP_HYBRID   "Ramp up (Hybrid)"
+#define D_THERMOSTAT_PI_HYBRID        "PI (Hybrid)"
+#define D_THERMOSTAT_AUTOTUNE_HYBRID  "Autotune (Hybrid)"
 
 // xsns_05_ds18b20.ino
 #define D_SENSOR_BUSY "Датчикът DS18x20 е зает"
@@ -942,6 +959,7 @@
 #define D_SENSOR_BIOPDU_PZEM016_RX "BioPDU PZEM016 Rx"
 #define D_SENSOR_BIOPDU_BIT    "BioPDU Bit"
 #define D_SENSOR_LOX_O2_RX     "LoxO2 RX"
+#define D_GPIO_MAGIC_SWITCH "MagicSwitch"
 
 // Units
 #define D_UNIT_AMPERE "А"
@@ -1205,5 +1223,9 @@
 // xsns_106_gdk101.ino
 #define D_AVG_RAD_DOSE                    "средна доза радиация"
 #define D_UNIT_US_H                       "µSv/h"
+
+// ixrv92_pipsolar.ino
+#define D_SENSOR_PIPSOLAR_TX             "Pipsolar TX"
+#define D_SENSOR_PIPSOLAR_RX             "Pipsolar RX"
 
 #endif  // _LANGUAGE_BG_BG_H_

@@ -428,6 +428,10 @@ class Tasmota
           return true
         except .. as e, m
           print(format("BRY: failed to run compiled code '%s' - %s", e, m))
+          if self._debug_present
+            import debug
+            debug.traceback()
+          end
         end
       end
       return false
@@ -553,8 +557,7 @@ class Tasmota
 
     # iterate and call each closure
     var i = 0
-    var sz = size(fl)
-    while i < sz
+    while i < size(fl)
       # note: this is not guarded in try/except for performance reasons. The inner function must not raise exceptions
       fl[i]()
       i += 1
